@@ -1,7 +1,7 @@
 package antipattern;
 
 
-import pattern.*;
+// import pattern.*;
 
 public class SudokuApp {
     public static void main(String[] args) {

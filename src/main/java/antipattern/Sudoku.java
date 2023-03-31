@@ -1,6 +1,6 @@
 package antipattern;
 
-import pattern.SudokuModel;
+// import pattern.SudokuModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,6 @@ public class Sudoku {
 
 
     public int getBlockSize() {
-
         return (int) Math.sqrt(board[0].length);
     }
 
@@ -82,7 +81,7 @@ public class Sudoku {
 
 
 
-        public void display() {
+    public void display() {
         for (int row = 0; row < this.getBoardSize(); row++) {
             if (row % this.getBlockSize() == 0) {
                 System.out.println(" -----------------------");
@@ -103,13 +102,13 @@ public class Sudoku {
         System.out.println(" -----------------------");
     }
 
-        public void update(int row, int col, int value) {
+    public void update(int row, int col, int value) {
         System.out.println("Cell at row " + row + ", column " + col + " updated to " + value);
         display();
 
     }
 
-        public void displayWelcomeMessage() {
+    public void displayWelcomeMessage() {
         System.out.println("Welcome to Sudoku game!");
         System.out.println("Please enter the board size:");
     }
@@ -121,7 +120,7 @@ public class Sudoku {
     saisies par l'utilisateur.
      */
 
-        public int[] askUserForCoords() {
+    public int[] askUserForCoords() {
         Scanner scanner = new Scanner(System.in);
         int[] coords = new int[2];
         System.out.println("Enter row number (1-9):");
@@ -135,14 +134,14 @@ public class Sudoku {
     Cette méthode affiche un message demandant à l'utilisateur d'entrer une valeur entre 1 et 9, puis lit l'entrée
     utilisateur à partir de la console à l'aide de la classe Scanner. Elle renvoie la valeur saisie sous forme d'un entier.
      */
-        public int askUserForValue() {
+    public int askUserForValue() {
         System.out.print("Enter value (1-9): ");
         Scanner scanner = new Scanner(System.in);
         int value = scanner.nextInt();
         return value;
     }
 
-        public void displayVictoryMessage() {
+    public void displayVictoryMessage() {
         System.out.println("Congratulations, you won the game!");
     }
 

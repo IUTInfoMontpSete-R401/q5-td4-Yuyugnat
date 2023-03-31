@@ -1,6 +1,6 @@
 package antipattern;
 
-import pattern.SudokuModel;
+// import pattern.SudokuModel;
 
 public class SudokuSolver {
 
